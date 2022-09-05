@@ -1,0 +1,135 @@
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	font-family:'josefin sans',sans-serif;
+
+}
+.menu{
+	height:100vh;
+	width:100%;
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(HO/one pice todos.jpg);
+	background-size: cover;
+	background-position: center;
+}
+nav
+{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top:40px;
+	padding-left:10%;
+	padding-right:10%;
+}
+
+.logo{
+	color:black;
+	font-size:20px;
+}
+span{
+	color: #ea1538
+}
+nav ul li{
+	list-style-type:none;
+	display: inline-block;
+	padding:10px 20px;
+}
+nav ul li a{
+	color:black;
+	text-decoration:none ;
+	font-weight: bold;
+}
+nav ul li a:hover{
+	transition:.3s ;
+
+}
+
+.baner{
+	width: 100%
+	height:400%;
+	border:3px solid red;
+	margin: auto;
+	overflow: hidden;
+}
+
+.baner ul{
+	display: flex;
+	padding:0;
+	width:300%;
+
+	animation:cambio 15s infinite;
+	
+	}
+
+.baner li {
+	width:100%;
+	list-style: none;
+
+}
+.baner img{
+	width:75%;
+	height :400;
+}
+
+@keyframes{
+	0%{margin-left:0;}
+	30%{margin-left:0;}
+
+	35%{margin-left:-100;}
+	65%{margin-left:-100;}
+
+	70%{margin-left:-200;}
+	100%{margin-left:-200;}
+
+}
+
+footer{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background: #101010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  #f9004d;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+.end{
+	position: absolute;
+	color:#f9004d;
+	bottom: 35px;
+	font-size: 14px; 
+}
